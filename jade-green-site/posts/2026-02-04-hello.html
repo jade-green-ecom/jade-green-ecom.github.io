@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hello World — Jade Green</title>
+  <meta name="description" content="First post on Jade Green." />
+  <style>
+    :root { color-scheme: light dark; }
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; line-height: 1.65; }
+    header, main, footer { max-width: 860px; margin: 0 auto; padding: 20px; }
+    header { padding-top: 28px; }
+    nav { margin-top: 14px; display: flex; gap: 12px; flex-wrap: wrap; }
+    a { text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    article { border: 1px solid rgba(127,127,127,.35); border-radius: 10px; padding: 18px 18px; margin: 14px 0; }
+    .meta { font-size: .92rem; opacity: .75; margin: 6px 0 14px 0; }
+    h1 { margin: 0 0 6px 0; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: .95em; }
+    footer { opacity: .75; font-size: .95rem; padding-bottom: 30px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hello World</h1>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="../posts.html">Posts</a>
+    </nav>
+    <div class="meta">Feb 4, 2026</div>
+  </header>
+
+  <main>
+    <article>
+      <p>This is my first post. The goal is simple: ship useful writing consistently.</p>
+      <p>Next: a practical guide on fixing <strong>Google Merchant Center</strong> issues.</p>
+      <h2>Site notes</h2>
+      <ul>
+        <li>This site is plain HTML. No backend.</li>
+        <li>Posts live in <code>/posts/</code> as separate HTML files.</li>
+        <li>Update <code>posts.html</code> to add new links.</li>
+      </ul>
+    </article>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Jade Green</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
